@@ -1,10 +1,6 @@
 #%%
-
-#%%
-import keyboard
-
-#%%
-import mouse
+# import keyboard
+import macmouse as mouse
 import time
 import os
 import platform
@@ -40,7 +36,7 @@ def on_mouse():
     global input_count
     input_count += 1
 
-keyboard.on_press(on_press)
+# keyboard.on_press(on_press)
 mouse.on_button(on_mouse)
 
 
