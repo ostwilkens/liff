@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  api:
+    build: ./src
+    volumes: 
+      - ./src:/app
+      # - type: bind
+      #   source: ./db.sqlite3
+      #   target: /app/db.sqlite3
+    command: uvicorn api:api --host 0.0.0.0 --port 80 --reload
+    networks:
+      - nginx-proxy
+    environment:
+      VIRTUAL_HOST: "liff-api.ostwilkens.se"
+      LETSENCRYPT_HOST: "liff-api.ostwilkens.se"
+
+networks:
+  nginx-proxy:
+    external: true

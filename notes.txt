@@ -1,0 +1,15 @@
+inspiration: howisfelix.today
+
+phone location tracking
+weather tracking based on location
+
+ios app usage / screen time tracking
+windows active window title + activity tracking
+macos active window title + activity tracking
+
+apple health: steps
+apple health: deep sleep time
+apple health: total sleep time (start-end)
+apple health: resting heart rate
+
+last.fm
